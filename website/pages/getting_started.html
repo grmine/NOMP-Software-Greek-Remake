@@ -211,7 +211,7 @@
         {{ } }}
         </div>
 
-        <div class="menuHeader">Νόμισμα</div>
+        <div class="menuHeader">Coins</div>
         <div class="menuList" id="coinList">
             {{ for(var pool in it.poolsConfigs) {
                 var info = JSON.stringify({
@@ -227,22 +227,22 @@
     </div>
 
     <div id="main">
-        <a href="https://www.dropbox.com/s/vk2jz7rjw5gou6g/GRMine.zip?dl=1" target="_blank" class="miningOption" >
+        <a href="#" class="miningOption" id="nompAppDownload">
             <div class="miningOptionNum">1.</div>
             <div class="miningOptionInstructions">
-                <div>Κατεβάστε την εφαρμογή μας για εξόρυξη.</div>
-                <div>Η έτοιμη εφαρμογή μας κάνει την εξόρυξη νομισμάτων παιχνίδι.</div>
+                <div>Download NOMP App</div>
+                <div>Our preconfigured app makes mining that easy</div>
             </div>
         </a>
         <div id="orHolder">
             <div id="orLine"></div>
-            <div id="orText">ή</div>
+            <div id="orText">or</div>
         </div>
         <a href="#" class="miningOption" id="coinGlowTrigger">
             <div class="miningOptionNum">2.</div>
             <div class="miningOptionInstructions">
-                <div>Επιλέξτε τις ρυθμίσεις για προχωρημένους.</div>
-                <div>Πατήστε πάνω αριστερά το Hellascoin.</div>
+                <div>Select a coin for connection details</div>
+                <div>Configurations for each coin are available for advanced miners</div>
             </div>
         </a>
     </div>
@@ -252,15 +252,15 @@
 
 <div id="coinInfo" class="hidden">
     <a href="#" id="coinInfoClose">×</a>
-    <div><span class="coinInfoName"></span> Ρυθμίσεις:</div>
+    <div><span class="coinInfoName"></span> Configuration:</div>
     <div id="coinInfoRows">
         <div id="coinInfoRowKeys">
-            <div> Όνομα Χρήστη:</div>
-            <div> Κωδικός:</div>
+            <div>Username:</div>
+            <div>Password:</div>
         </div>
         <div id="coinInfoRowValues">
             <div id="coinInfoUsername"></div>
-            <div> Τίποτα</div>
+            <div>anything</div>
         </div>
     </div>
 </div>
@@ -269,7 +269,7 @@
 
     function showCoinConfig(info){
 
-        var htmlKeys = '<div class="coinInfoData">Αλγόριθμος:</div>';
+        var htmlKeys = '<div class="coinInfoData">Algorithm:</div>';
         var htmlValues = '<div class="coinInfoData">' + info.algo + '</div>';
 
         for (var port in info.ports){
@@ -278,7 +278,7 @@
         }
 
         if (info.coin)
-            $('#coinInfoUsername').text('H ' + info.coin.name + ' διεύθυνση του πορτοφολιού σας');
+            $('#coinInfoUsername').text('your ' + info.coin.name + ' wallet address');
         else
             $('#coinInfoUsername').text('your public key');
         $('.coinInfoData').remove();
