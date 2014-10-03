@@ -1,5 +1,5 @@
 # NOMP ![NOMP Logo](http://zone117x.github.io/node-open-mining-portal/logo.svg "NOMP Logo")
-#### Node Open Mining Portal
+#### Node Open Mining Portal Greek Remake
 
 This portal is an extremely efficient, highly scalable, all-in-one, easy to setup cryptocurrency mining pool written
 entirely in Node.js. It contains a stratum poolserver; reward/payment/share processor; and a (*not yet completed*)
@@ -151,7 +151,7 @@ you are using - a good place to start with redis is [data persistence](http://re
 Follow the build/install instructions for your coin daemon. Your coin.conf file should end up looking something like this:
 ```
 daemon=1
-rpcuser=litecoinrpc
+rpcuser=hellascoinrpc
 rpcpassword=securepassword
 rpcport=19332
 ```
@@ -170,7 +170,7 @@ a good pool operator. For starters be sure to read:
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/zone117x/node-open-mining-portal.git nomp
+git clone https://github.com/grmine/NOMP-Software-Greek-Remake nomp
 cd nomp
 npm update
 ```
@@ -379,7 +379,7 @@ Description of options:
 ````javascript
 {
     "enabled": true, //Set this to false and a pool will not be created from this config file
-    "coin": "litecoin.json", //Reference to coin config file in 'coins' directory
+    "coin": "hellascoin.json", //Reference to coin config file in 'coins' directory
 
     "address": "mi4iBXbBsydtcc5yFmsff2zCFVX4XG7qJc", //Address to where block rewards are given
 
@@ -480,7 +480,7 @@ Description of options:
         "port": 3306, //MySQL db port
         "user": "me", //MySQL db user
         "password": "mypass", //MySQL db password
-        "database": "ltc", //MySQL db database name
+        "database": "hlc", //MySQL db database name
 
         /* Checks for valid password in database when miners connect. */
         "checkPassword": true,
@@ -541,7 +541,7 @@ the `node-stratum-pool` and `node-multi-hashing` modules, and any config files t
 
 Donations
 ---------
-To support development of this project feel free to donate :)
+To support development of this project in English feel free to donate :)
 
 * BTC: `1KRotMnQpxu3sePQnsVLRy3EraRFYfJQFR`
 * LTC: `LKfavSDJmwiFdcgaP1bbu46hhyiWw5oFhE`
@@ -552,6 +552,10 @@ To support development of this project feel free to donate :)
 * DOGE: `DBGGVtwAAit1NPZpRm5Nz9VUFErcvVvHYW`
 * Cryptsy Trade Key: `254ca13444be14937b36c44ba29160bd8f02ff76`
 
+To support development of this project in Greek feel free to donate :)
+
+* BTC: `1BfdUjPC1TqtPFngVstoL4zvggPR1uYv8w`
+* HLC: `HUTTX2bX5G84TNyb1xoDUj5iEz3miNftWT`
 Credits
 -------
 * [Jerry Brady / mintyfresh68](https://github.com/bluecircle) - got coin-switching fully working and developed proxy-per-algo feature
@@ -564,6 +568,7 @@ Credits
 * [svirusxxx](//github.com/svirusxxx) - sponsored development of MPOS mode
 * [icecube45](//github.com/icecube45) - helping out with the repo wiki
 * [Fcases](//github.com/Fcases) - ordered me a pizza <3
+* [NickTehPro] (//github.com/nicktehpro) - Translated NOMP in Greek
 * Those that contributed to [node-stratum-pool](//github.com/zone117x/node-stratum-pool#credits)
 
 
