@@ -556,6 +556,7 @@ To support development of this project in Greek feel free to donate :)
 
 * BTC: `1BfdUjPC1TqtPFngVstoL4zvggPR1uYv8w`
 * HLC: `HUTTX2bX5G84TNyb1xoDUj5iEz3miNftWT`
+
 Credits
 -------
 * [Jerry Brady / mintyfresh68](https://github.com/bluecircle) - got coin-switching fully working and developed proxy-per-algo feature
